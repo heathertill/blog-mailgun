@@ -8,7 +8,8 @@ import { json, User } from '../../utils/api';
 export interface OneBlogProps extends RouteComponentProps<{ id: string }> { }
 
 export interface Tag {
-    id: number, name: string
+    id: number,
+    name: string
 }
 
 const OneBlog: React.FC<OneBlogProps> = ({ history, match: { params: { id } } }) => {
